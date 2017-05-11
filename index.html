@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE HTML> 
 <html>
 	<head>
 		<title>Israel Outeiro</title>
@@ -28,7 +23,75 @@
 				outline: none;
 			}
 
+			label.error{
+				margin-left: 10px;
+			}
+
+			.loader{
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    background: rgba(255,255,255,.5);
+			    width: 100%;
+			    height: 100%;
+			    z-index: 100001;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    display: none;
+			}
+
+			.backdrop{
+				position: fixed;
+			    top: 0;
+			    left: 0;
+			    background: rgba(255,255,255,.5);
+			    width: 100%;
+			    height: 100%;
+			    z-index: 100001;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    display: none;
+			    cursor: pointer;
+			    transition: all .3s ease;
+			}
+
+			.real-message{		
+			    width: 80%;
+			    max-width: 550px;
+			    min-height: 150px;
+			    background: white;
+			    border-radius: 10px;
+			    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15); 
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    padding: 50px;
+    			text-align: center;
+    			transition: all .3s ease;
+    			opacity: 0;
+    		}
+
+    		.real-message h4{
+			    color:#4acaa8;
+			}
+
 		</style>
+
+
+		<meta name="description" content="Israel Outeiro Software Development Engineer">
+	    <meta name="keywords" content="portfolio, webdeveloper, developer brazil, webmaster, brasilia, desenvolvimento de sites, desenvolvimento de aplicativos, hacker, sobradinho">
+	    <meta name="author" content="israelOuteiro">
+	    <meta name="description" content="Este é o meu portifólio.">
+	    
+	    <link rel="shortcut icon" href="images/markerIsrael.png">
+	    <link rel="apple-touch-icon" href="images/markerIsrael.png">
+	    <link rel="apple-touch-icon" sizes="72x72" href="images/markerIsrael.png">
+	    <link rel="apple-touch-icon" sizes="114x114" href="images/markerIsrael.png">
+   
+	    <meta name="robots" content="index, follow">
+
 	</head>
 	<body>
 
@@ -42,18 +105,18 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active"> Sobre </a></li>
-						<li><a href="#two"> O que eu faço ? </a></li>
-						<li><a href="#three"> Alguns Serviços </a></li>
-						<li><a href="#four"> Contato </a></li>
+						<li><a href="#two" > O que eu faço ? </a></li>
+						<li><a href="#three" > Alguns Serviços </a></li>
+						<li><a href="#four" > Contato </a></li>
 					</ul>
 				</nav>
 				<footer>
 					<ul class="icons">
-						<li><a href="https://play.google.com/store/apps/dev?id=8502927747650418513" target="new" class="icon fa-android"><span class="label">Android</span></a></li>
-						<li><a href="http://codepen.io/israelouteiro/" target="blank" class="icon fa-codepen"><span class="label">CodePen</span></a></li>
-						<li><a href="http://instagram.com/israelouteiro" target="blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/israelouteiro" target="blank" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:jedi@israelouteiro.com" target="blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://play.google.com/store/apps/dev?id=8502927747650418513" target="_new" class="icon fa-android"><span class="label">Android</span></a></li>
+						<li><a href="http://codepen.io/israelouteiro/" target="_new" class="icon fa-codepen"><span class="label">CodePen</span></a></li>
+						<li><a href="http://instagram.com/israelouteiro" target="_new" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/israelouteiro" target="_new" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:jedi@israelouteiro.com" target="_new" class="icon fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -115,30 +178,39 @@
 									<p> Cada sistema desenvolvido é uma obra prima, uma joia rara que carrega em cada linha de código o amor e atenção para garantir a qualidade que é marca registrada dos nossos sistemas. </p>
 									<div class="features">
 										<article>
-											<a href="http://voter.com.br" target="blank" class="image"><img src="images/pic01.png" alt="" /></a>
+											<a href="http://voter.com.br" target="_new" class="image"><img src="images/pic01.png" alt="" /></a>
 											<div class="inner">
-												<h4>Voter</h4>
+												<a href="http://voter.com.br" target="_new" class="image">
+													<h4>Voter</h4>
+												</a>
 												<p>Uma ferramenta online que disponibiliza dados consolidados das eleições de todo o Brasil.</p>
 											</div>
 										</article>
 										<article>
-											<a href="http://uuanted.com" target="blank" class="image"><img src="images/pic02.png" alt="" /></a>
-											<div class="inner">
-												<h4>UUanted</h4>
-												<p>Uma nova forma revolucionaria de comprar pela internet!</p>
-											</div>
+											<a href="http://uuanted.com" target="_new" class="image"><img src="images/pic02.png" alt="" /></a> 
+												<div class="inner">
+													<a href="http://uuanted.com" target="_new">
+														<h4>UUanted</h4>
+													</a>
+													<p>Uma nova forma revolucionaria de comprar pela internet!</p>
+												</div>
+											</a>
 										</article>
 										<article>
-											<a href="#three" target="blank" class="image"><img src="images/pic04.png" alt="" /></a>
+											<a href="#three" target="_new" class="image"><img src="images/pic04.png" alt="" /></a>
 											<div class="inner">
-												<h4>AMBr</h4>
+												<a href="#three">
+													<h4>AMBr</h4>
+												</a>
 												<p>Um site para centralizar noticias e eventos da associação</p>
 											</div>
 										</article>
 										<article>
-											<a href="http://handson.tv" target="blank" class="image"><img src="images/pic03.png" alt="" /></a>
+											<a href="http://handson.tv" target="_new" class="image"><img src="images/pic03.png" alt="" /></a>
 											<div class="inner">
-												<h4>HandsOn.TV</h4>
+												<a href="http://handson.tv" target="_new">
+													<h4>HandsOn.TV</h4>
+												</a>
 												<p> Uma televisão para empreendedores que organiza um grande evento na europa para Conectar startups com investidores </p>
 											</div>
 										</article>
@@ -151,16 +223,16 @@
 								<div class="container">
 									<h3>Fale Comigo</h3>
 									<p> Deixe uma mensagem que serei notificado, não tenha medo não existe um problema tão grande que não possamos resolver juntos </p>
-									<form method="post" action="#">
+									<form id="form-contact" method="post" onsubmit="return false;">
 										<div class="row uniform">
-											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Nome" /></div>
-											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="12u metade 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Nome" required /></div>
+											<div class="12u metade 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" required /></div>
 										</div>
 										<div class="row uniform">
-											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Assunto" /></div>
+											<div class="12u cemPorcento"><input type="text" name="subject" id="subject" placeholder="Assunto" required /></div>
 										</div>
 										<div class="row uniform">
-											<div class="12u"><textarea name="message" id="message" placeholder="Mensagem" rows="6"></textarea></div>
+											<div class="12u cemPorcento"><textarea name="message" id="message" placeholder="Mensagem" rows="6" required ></textarea></div>
 										</div>
 										<div class="row uniform">
 											<div class="12u">
@@ -189,6 +261,20 @@
 
 			</div>
 
+
+
+			<div class="backdrop" onclick="hideMessage()">
+				<div class="real-message">
+					<h4> Obrigado, sua mensagem foi enviada com sucesso. Aguarde que assim que possível entrarei em contato com você. </h4>
+				</div>
+			</div>
+
+
+			<div class="loader">
+                <img src="images/load.gif">
+            </div>
+
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
@@ -197,6 +283,63 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script src="assets/js/jquery.validate.min.js"></script>
+			<script src="assets/js/messages_ptbr.js"></script>
+			<script>
+				
+				$(document).ready(function(){
+					validateForm();
+				})
+
+				var validateForm = function(){
+					$('#form-contact').validate({
+						submitHandler: function(form){
+							sentMail();
+							return false;
+						}
+					});
+				}
+
+				var sentMail = function(){
+					showLoad();
+					var sent_data = { name:$('#name').val(), email:$('#email').val() , message:$('#message').val() , subject: $('#subject').val() };
+					$.post('service/sender.php', sent_data).done(function(rdata){
+						showMessage()
+						document.getElementById('form-contact').reset();
+						hideLoad();
+					}).fail(function(){
+						hideLoad();
+					})
+				}
+
+
+				var showLoad = function(){
+					$('.loader').css('display','flex');
+				}
+
+				var hideLoad = function(){
+					$('.loader').css('display','none');
+				}
+
+				var showMessage = function(){
+					$('.backdrop').css('display', 'flex')
+					$('.real-message').animate({
+						opacity:1
+					}, 300 );
+				}
+
+				var hideMessage = function(){
+					$('.real-message').animate({
+						opacity:0
+					}, 300 , function(){ 
+						setTimeout(function(){
+							$('.backdrop').css('display', 'none');
+						}, 300) 
+					});
+				}
+
+			</script>
 
 	</body>
 </html>
