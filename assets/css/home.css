@@ -1,0 +1,68 @@
+::selection{
+	background: rgb(74, 202, 168, .3) !important;
+}
+
+.fa-mobile:before{
+    width: 1.5em !important;
+    height: 1.5em !important;
+    line-height: 1.5em !important;
+    font-size: 30px;
+}
+
+button, input{
+	outline: none;
+}
+
+label.error{
+	margin-left: 10px;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 100001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.backdrop{
+	position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 100001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.real-message{		
+    width: 80%;
+    max-width: 550px;
+    min-height: 150px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+	text-align: center;
+	transition: all .3s ease;
+	opacity: 0;
+}
+
+.real-message h4{
+    color:#4acaa8;
+}
